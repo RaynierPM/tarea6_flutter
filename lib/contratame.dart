@@ -15,7 +15,7 @@ class Contratame extends StatelessWidget {
   Widget build(BuildContext context) => Scaffold(
     appBar: getAppBar("Contratame"),
 
-    backgroundColor: Color.fromARGB(129, 162, 205, 176),
+    backgroundColor: const Color.fromARGB(129, 162, 205, 176),
 
     body: Container(
       width: MediaQuery.of(context).size.width,
@@ -34,11 +34,17 @@ class Contratame extends StatelessWidget {
               ),
               child: Image.asset("assets/ray.png", width: 400, height: 400, fit: BoxFit.fitHeight,),
             ),
-            Text("Raynier Perez Minyety", style: texto,),
-            Text("20210218@itla.edu.do", style: texto,),
-            Text("raynierminyety@gmail.com", style: texto,),
-            Text("github.com/RaynierPM", style: texto,),
-            Text("Telefono: 849-402-8297", style: texto,)
+            Expanded(child:  Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text("Raynier Perez Minyety", style: texto,),
+                Text("20210218@itla.edu.do", style: texto,),
+                Text("raynierminyety@gmail.com", style: texto,),
+                Text("github.com/RaynierPM", style: texto,),
+                Text("Telefono: 849-402-8297", style: texto,)
+                ],
+              ) 
+            )
         ],
       ),
     )
