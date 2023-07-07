@@ -3,6 +3,8 @@ import 'package:tarea6_flutter/globals.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
+//Prueba del git
+
 class ClimaPage extends StatelessWidget {
   ClimaPage({super.key});
 
